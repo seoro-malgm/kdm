@@ -1,0 +1,63 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+.gnb {
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #fff, $alpha: 0.3);
+  backdrop-filter: blur(1px);
+  .wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+h1 {
+  color: var(--primary);
+}
+
+main.main {
+  margin-top: $gnb-height;
+}
+
+section.home-intro {
+  width: 100%;
+  min-height: 720px;
+  background-color: #333399;
+}
+section.home-slides {
+  margin: 64px 0;
+}
+
+footer.gnf {
+  padding: 24px 0;
+  background-color: #111;
+  color: white;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links {
+      display: flex;
+      align-items: center;
+      a:link {
+        margin: 0 12px;
+      }
+    }
+  }
+}
